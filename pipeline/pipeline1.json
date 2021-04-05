@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "GFEBSCopyData",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -36,7 +36,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"fileExtension": ".csv"
 						}
 					},
 					"enableStaging": false,
@@ -51,13 +51,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "GFEBSSource",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "GFEBSSink",
+						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					}
 				]
