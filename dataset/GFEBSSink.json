@@ -1,15 +1,15 @@
 {
-	"name": "GFEBSSource",
+	"name": "GFEBSSink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "GFEBSSource",
+			"referenceName": "GFEBSSInk",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureFileStorageLocation"
+				"type": "AzureBlobFSLocation"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
